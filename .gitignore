@@ -6,16 +6,3 @@ convbin.trace
 
 # Folders: 
 src/__pycache__/
-f9p_ppp_1224/
-
-data/test/
-data/log/*
-# data/fig/*
-data/rinex/*
-data/ublox/*
-
-# Not excluded
-!data/rinex/file_creator
-!data/rinex/mantener
-!data/ublox
-!data/fig

@@ -1,0 +1,886 @@
+FileName: .\data\rinex\file_creator\\SEPT223Y_copy.23O
+Start   : 2023-08-11 21:00:01
+End     : 2023-08-11 22:00:00
+Receiver: U-BLOX M8T          
+Antenna : ANTENA_INVENTADA    
+
+
+SETUP:
+Minimum elevation: 5.0
+Ambiguity: 2.0
+ARmode: 3 (0:float-ppp,1:continuous,2:instantaneous,3:fix-and-hold)
+Ephemeris: 4 (0: BRDC, 1: SBAS, 2: SSR-APC, 3: SSR-CG, 4: PREC)
+Position mode: 0 (0:static, 1:kinematic)
+Frequency: {'GPS': 'dual-frequency', 'Galileo': 'dual-frequency'}
+
+Available signals
+GPS     C1C L1C D1C S1C C1W S1W C2W L2W D2W S2W C2L L2L D2L S2L C5Q L5Q D5Q S5Q C1L L1L D1L S1L
+GALILEO C1C L1C D1C S1C C6C L6C D6C S6C C5Q L5Q D5Q S5Q C7Q L7Q D7Q S7Q C8Q L8Q D8Q S8Q
+SBAS    C1C L1C D1C S1C C5I L5I D5I S5I
+GLONASS C1C L1C D1C S1C C1P L1P D1P S1P C2P L2P D2P S2P C2C L2C D2C S2C C3Q L3Q D3Q S3Q
+BEIDOU  C1P L1P D1P S1P C5P L5P D5P S5P C2I L2I D2I S2I C7I L7I D7I S7I C6I L6I D6I S6I C7D L7D D7D S7D
+QZSS    C1C L1C D1C S1C C2L L2L D2L S2L C5Q L5Q D5Q S5Q C1L L1L D1L S1L C1Z L1Z D1Z S1Z C5P L5P D5P S5P
+IRNSS   C5A L5A D5A S5A
+
+Selected signals
+GPS     C1C C5Q L1C L5Q S1C S5Q 
+GALILEO C1C C5Q L1C L5Q S1C S5Q 
+
+PPP SOLUTION:
+2023-08-11 21:00:01  G01 - edit - satellite unhealthy
+2023-08-11 21:00:01  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:01  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:01  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:01  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:01  E25 - edit - satellite unhealthy
+2023-08-11 21:00:01  E10 - init  ambiguity  EL1C      106.146
+2023-08-11 21:00:01  E10 - init  ionosphere             3.246
+2023-08-11 21:00:01  E11 - init  ambiguity  EL1C       21.378
+2023-08-11 21:00:01  E11 - init  ionosphere            -0.091
+2023-08-11 21:00:01  E12 - init  ambiguity  EL1C       55.416
+2023-08-11 21:00:01  E12 - init  ionosphere             0.147
+2023-08-11 21:00:01  E24 - init  ambiguity  EL1C       43.498
+2023-08-11 21:00:01  E24 - init  ionosphere             1.911
+2023-08-11 21:00:01  E31 - init  ambiguity  EL1C      157.514
+2023-08-11 21:00:01  E31 - init  ionosphere             7.503
+2023-08-11 21:00:01  E33 - init  ambiguity  EL1C       51.467
+2023-08-11 21:00:01  E33 - init  ionosphere             7.453
+2023-08-11 21:00:01  E36 - init  ambiguity  EL1C       77.911
+2023-08-11 21:00:01  E36 - init  ionosphere             7.982
+2023-08-11 21:00:01  G03 - init  ambiguity  GL1C       36.436
+2023-08-11 21:00:01  G03 - init  ionosphere             4.479
+2023-08-11 21:00:01  G08 - init  ambiguity  GL1C       91.136
+2023-08-11 21:00:01  G08 - init  ionosphere             2.524
+2023-08-11 21:00:01  G14 - init  ambiguity  GL1C       66.420
+2023-08-11 21:00:01  G14 - init  ionosphere             5.708
+2023-08-11 21:00:01  G27 - init  ambiguity  GL1C       95.865
+2023-08-11 21:00:01  G27 - init  ionosphere             9.379
+2023-08-11 21:00:01  G30 - init  ambiguity  GL1C       53.907
+2023-08-11 21:00:01  G30 - init  ionosphere             5.066
+2023-08-11 21:00:01  E10 - init  ambiguity  EL5Q      124.200
+2023-08-11 21:00:01  E11 - init  ambiguity  EL5Q       46.478
+2023-08-11 21:00:01  E12 - init  ambiguity  EL5Q       75.072
+2023-08-11 21:00:01  E24 - init  ambiguity  EL5Q       78.080
+2023-08-11 21:00:01  E31 - init  ambiguity  EL5Q      226.264
+2023-08-11 21:00:01  E33 - init  ambiguity  EL5Q       76.879
+2023-08-11 21:00:01  E36 - init  ambiguity  EL5Q       93.870
+2023-08-11 21:00:01  G03 - init  ambiguity  GL5Q       33.932
+2023-08-11 21:00:01  G08 - init  ambiguity  GL5Q      124.153
+2023-08-11 21:00:01  G14 - init  ambiguity  GL5Q       92.398
+2023-08-11 21:00:01  G27 - init  ambiguity  GL5Q      133.385
+2023-08-11 21:00:01  G30 - init  ambiguity  GL5Q       56.512
+2023-08-11 21:00:01 Sol: [ -3962108.8100,   3381310.4252,   3668679.8379] ENU: [ -0.636,   0.570,   1.291] ZTD: [0.0671691] mode [5]
+2023-08-11 21:00:02  G01 - edit - satellite unhealthy
+2023-08-11 21:00:02  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:02  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:02  G10 - edit - low elevation   2.0 deg
+2023-08-11 21:00:02  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:02  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:02  E25 - edit - satellite unhealthy
+2023-08-11 21:00:02 Sol: [ -3962108.5439,   3381310.3209,   3668679.7842] ENU: [ -0.729,   0.682,   1.039] ZTD: [0.0923103] mode [5]
+2023-08-11 21:00:03  G01 - edit - satellite unhealthy
+2023-08-11 21:00:03  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:03  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:03  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:03  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:03  E25 - edit - satellite unhealthy
+2023-08-11 21:00:03 Sol: [ -3962108.5121,   3381310.2908,   3668679.6930] ENU: [ -0.727,   0.633,   0.951] ZTD: [0.1092252] mode [5]
+2023-08-11 21:00:04  G01 - edit - satellite unhealthy
+2023-08-11 21:00:04  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:04  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:04  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:04  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:04  E25 - edit - satellite unhealthy
+2023-08-11 21:00:04 Sol: [ -3962108.5366,   3381310.2998,   3668679.6146] ENU: [ -0.718,   0.555,   0.926] ZTD: [0.1227701] mode [5]
+2023-08-11 21:00:05  G01 - edit - satellite unhealthy
+2023-08-11 21:00:05  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:05  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:05  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:05  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:05  E25 - edit - satellite unhealthy
+2023-08-11 21:00:05 Sol: [ -3962108.6465,   3381310.3166,   3668679.6028] ENU: [ -0.659,   0.491,   0.996] ZTD: [0.1296496] mode [5]
+2023-08-11 21:00:06  G01 - edit - satellite unhealthy
+2023-08-11 21:00:06  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:06  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:06  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:06  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:06  E25 - edit - satellite unhealthy
+2023-08-11 21:00:06  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:06  G03 - reset ionosphere
+2023-08-11 21:00:06  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:06  G08 - reset ionosphere
+2023-08-11 21:00:06  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:06  G14 - reset ionosphere
+2023-08-11 21:00:06  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:06  G27 - reset ionosphere
+2023-08-11 21:00:06  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:06  G30 - reset ionosphere
+2023-08-11 21:00:06  G03 - init  ambiguity  GL1C       40.622
+2023-08-11 21:00:06  G03 - init  ionosphere             4.818
+2023-08-11 21:00:06  G08 - init  ambiguity  GL1C       82.729
+2023-08-11 21:00:06  G08 - init  ionosphere             1.927
+2023-08-11 21:00:06  G14 - init  ambiguity  GL1C       68.831
+2023-08-11 21:00:06  G14 - init  ionosphere             5.833
+2023-08-11 21:00:06  G27 - init  ambiguity  GL1C      114.130
+2023-08-11 21:00:06  G27 - init  ionosphere            10.602
+2023-08-11 21:00:06  G30 - init  ambiguity  GL1C       60.904
+2023-08-11 21:00:06  G30 - init  ionosphere             5.539
+2023-08-11 21:00:06  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:06  G03 - reset ionosphere
+2023-08-11 21:00:06  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:06  G08 - reset ionosphere
+2023-08-11 21:00:06  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:06  G14 - reset ionosphere
+2023-08-11 21:00:06  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:06  G27 - reset ionosphere
+2023-08-11 21:00:06  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:06  G30 - reset ionosphere
+2023-08-11 21:00:06  G03 - init  ambiguity  GL5Q       38.131
+2023-08-11 21:00:06  G03 - init  ionosphere             4.818
+2023-08-11 21:00:06  G08 - init  ambiguity  GL5Q      116.004
+2023-08-11 21:00:06  G08 - init  ionosphere             1.927
+2023-08-11 21:00:06  G14 - init  ambiguity  GL5Q       94.584
+2023-08-11 21:00:06  G14 - init  ionosphere             5.833
+2023-08-11 21:00:06  G27 - init  ambiguity  GL5Q      150.810
+2023-08-11 21:00:06  G27 - init  ionosphere            10.602
+2023-08-11 21:00:06  G30 - init  ambiguity  GL5Q       63.204
+2023-08-11 21:00:06  G30 - init  ionosphere             5.539
+2023-08-11 21:00:06 Sol: [ -3962108.7678,   3381310.3494,   3668679.6044] ENU: [ -0.606,   0.426,   1.089] ZTD: [0.1324326] mode [5]
+2023-08-11 21:00:07  G01 - edit - satellite unhealthy
+2023-08-11 21:00:07  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:07  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:07  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:07  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:07  E25 - edit - satellite unhealthy
+2023-08-11 21:00:07 Sol: [ -3962108.9415,   3381310.3980,   3668679.6473] ENU: [ -0.530,   0.367,   1.248] ZTD: [0.1268335] mode [5]
+2023-08-11 21:00:08  G01 - edit - satellite unhealthy
+2023-08-11 21:00:08  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:08  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:08  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:08  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:08  E25 - edit - satellite unhealthy
+2023-08-11 21:00:08 Sol: [ -3962109.0860,   3381310.4468,   3668679.6656] ENU: [ -0.473,   0.300,   1.374] ZTD: [0.1248237] mode [5]
+2023-08-11 21:00:09  G01 - edit - satellite unhealthy
+2023-08-11 21:00:09  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:09  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:09  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:09  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:09  E25 - edit - satellite unhealthy
+2023-08-11 21:00:09 Sol: [ -3962109.2091,   3381310.4863,   3668679.6517] ENU: [ -0.423,   0.219,   1.463] ZTD: [0.1279332] mode [5]
+2023-08-11 21:00:10  G01 - edit - satellite unhealthy
+2023-08-11 21:00:10  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:10  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:10  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:10  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:10  E25 - edit - satellite unhealthy
+2023-08-11 21:00:10 Sol: [ -3962109.3835,   3381310.5299,   3668679.6637] ENU: [ -0.343,   0.136,   1.601] ZTD: [0.1256984] mode [5]
+2023-08-11 21:00:11  G01 - edit - satellite unhealthy
+2023-08-11 21:00:11  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:11  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:11  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:11  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:11  E25 - edit - satellite unhealthy
+2023-08-11 21:00:11 Sol: [ -3962109.5738,   3381310.5642,   3668679.6829] ENU: [ -0.246,   0.055,   1.749] ZTD: [0.1242425] mode [5]
+2023-08-11 21:00:12  G01 - edit - satellite unhealthy
+2023-08-11 21:00:12  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:12  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:12  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:12  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:12  E25 - edit - satellite unhealthy
+2023-08-11 21:00:12  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:12  G03 - reset ionosphere
+2023-08-11 21:00:12  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:12  G08 - reset ionosphere
+2023-08-11 21:00:12  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:12  G14 - reset ionosphere
+2023-08-11 21:00:12  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:12  G27 - reset ionosphere
+2023-08-11 21:00:12  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:12  G30 - reset ionosphere
+2023-08-11 21:00:12  G03 - init  ambiguity  GL1C       30.663
+2023-08-11 21:00:12  G03 - init  ionosphere             4.018
+2023-08-11 21:00:12  G08 - init  ambiguity  GL1C       82.414
+2023-08-11 21:00:12  G08 - init  ionosphere             1.926
+2023-08-11 21:00:12  G14 - init  ambiguity  GL1C       65.800
+2023-08-11 21:00:12  G14 - init  ionosphere             5.630
+2023-08-11 21:00:12  G27 - init  ambiguity  GL1C      108.993
+2023-08-11 21:00:12  G27 - init  ionosphere            10.173
+2023-08-11 21:00:12  G30 - init  ambiguity  GL1C       59.571
+2023-08-11 21:00:12  G30 - init  ionosphere             5.438
+2023-08-11 21:00:12  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:12  G03 - reset ionosphere
+2023-08-11 21:00:12  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:12  G08 - reset ionosphere
+2023-08-11 21:00:12  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:12  G14 - reset ionosphere
+2023-08-11 21:00:12  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:12  G27 - reset ionosphere
+2023-08-11 21:00:12  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:12  G30 - reset ionosphere
+2023-08-11 21:00:12  G03 - init  ambiguity  GL5Q       28.199
+2023-08-11 21:00:12  G03 - init  ionosphere             4.018
+2023-08-11 21:00:12  G08 - init  ambiguity  GL5Q      115.761
+2023-08-11 21:00:12  G08 - init  ionosphere             1.926
+2023-08-11 21:00:12  G14 - init  ambiguity  GL5Q       91.690
+2023-08-11 21:00:12  G14 - init  ionosphere             5.630
+2023-08-11 21:00:12  G27 - init  ambiguity  GL5Q      145.568
+2023-08-11 21:00:12  G27 - init  ionosphere            10.173
+2023-08-11 21:00:12  G30 - init  ambiguity  GL5Q       61.877
+2023-08-11 21:00:12  G30 - init  ionosphere             5.438
+2023-08-11 21:00:12 Sol: [ -3962109.7822,   3381310.6276,   3668679.7342] ENU: [ -0.159,  -0.018,   1.941] ZTD: [0.1209757] mode [5]
+2023-08-11 21:00:13  G01 - edit - satellite unhealthy
+2023-08-11 21:00:13  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:13  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:13  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:13  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:13  E25 - edit - satellite unhealthy
+2023-08-11 21:00:13 Sol: [ -3962109.9465,   3381310.6778,   3668679.7836] ENU: [ -0.090,  -0.069,   2.098] ZTD: [0.1190498] mode [5]
+2023-08-11 21:00:14  G01 - edit - satellite unhealthy
+2023-08-11 21:00:14  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:14  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:14  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:14  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:14  E25 - edit - satellite unhealthy
+2023-08-11 21:00:14 Sol: [ -3962110.1076,   3381310.7496,   3668679.8175] ENU: [ -0.040,  -0.139,   2.256] ZTD: [0.1159359] mode [5]
+2023-08-11 21:00:15  G01 - edit - satellite unhealthy
+2023-08-11 21:00:15  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:15  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:15  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:15  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:15  E25 - edit - satellite unhealthy
+2023-08-11 21:00:15 Sol: [ -3962110.2394,   3381310.8221,   3668679.8632] ENU: [ -0.010,  -0.187,   2.403] ZTD: [0.1132366] mode [5]
+2023-08-11 21:00:16  G01 - edit - satellite unhealthy
+2023-08-11 21:00:16  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:16  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:16  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:16  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:16  E25 - edit - satellite unhealthy
+2023-08-11 21:00:16 Sol: [ -3962110.3587,   3381310.8827,   3668679.9094] ENU: [  0.021,  -0.225,   2.535] ZTD: [0.1129809] mode [5]
+2023-08-11 21:00:17  G01 - edit - satellite unhealthy
+2023-08-11 21:00:17  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:17  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:17  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:17  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:17  E25 - edit - satellite unhealthy
+2023-08-11 21:00:17 Sol: [ -3962110.4934,   3381310.9655,   3668679.9669] ENU: [  0.046,  -0.268,   2.696] ZTD: [0.1040060] mode [5]
+2023-08-11 21:00:18  G01 - edit - satellite unhealthy
+2023-08-11 21:00:18  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:18  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:18  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:18  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:18  E25 - edit - satellite unhealthy
+2023-08-11 21:00:18  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:18  G03 - reset ionosphere
+2023-08-11 21:00:18  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:18  G08 - reset ionosphere
+2023-08-11 21:00:18  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:18  G14 - reset ionosphere
+2023-08-11 21:00:18  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:18  G27 - reset ionosphere
+2023-08-11 21:00:18  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:18  G30 - reset ionosphere
+2023-08-11 21:00:18  G03 - init  ambiguity  GL1C       33.072
+2023-08-11 21:00:18  G03 - init  ionosphere             4.131
+2023-08-11 21:00:18  G08 - init  ambiguity  GL1C       86.408
+2023-08-11 21:00:18  G08 - init  ionosphere             2.225
+2023-08-11 21:00:18  G14 - init  ambiguity  GL1C       66.246
+2023-08-11 21:00:18  G14 - init  ionosphere             5.663
+2023-08-11 21:00:18  G27 - init  ambiguity  GL1C       88.152
+2023-08-11 21:00:18  G27 - init  ionosphere             8.708
+2023-08-11 21:00:18  G30 - init  ambiguity  GL1C       55.092
+2023-08-11 21:00:18  G30 - init  ionosphere             5.117
+2023-08-11 21:00:18  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:18  G03 - reset ionosphere
+2023-08-11 21:00:18  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:18  G08 - reset ionosphere
+2023-08-11 21:00:18  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:18  G14 - reset ionosphere
+2023-08-11 21:00:18  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:18  G27 - reset ionosphere
+2023-08-11 21:00:18  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:18  G30 - reset ionosphere
+2023-08-11 21:00:18  G03 - init  ambiguity  GL5Q       30.370
+2023-08-11 21:00:18  G03 - init  ionosphere             4.131
+2023-08-11 21:00:18  G08 - init  ambiguity  GL5Q      119.658
+2023-08-11 21:00:18  G08 - init  ionosphere             2.225
+2023-08-11 21:00:18  G14 - init  ambiguity  GL5Q       92.132
+2023-08-11 21:00:18  G14 - init  ionosphere             5.663
+2023-08-11 21:00:18  G27 - init  ambiguity  GL5Q      125.371
+2023-08-11 21:00:18  G27 - init  ionosphere             8.708
+2023-08-11 21:00:18  G30 - init  ambiguity  GL5Q       57.507
+2023-08-11 21:00:18  G30 - init  ionosphere             5.117
+2023-08-11 21:00:18 Sol: [ -3962110.5738,   3381311.0154,   3668679.9867] ENU: [  0.060,  -0.306,   2.784] ZTD: [0.1007710] mode [5]
+2023-08-11 21:00:19  G01 - edit - satellite unhealthy
+2023-08-11 21:00:19  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:19  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:19  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:19  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:19  E25 - edit - satellite unhealthy
+2023-08-11 21:00:19 Sol: [ -3962110.6296,   3381311.0482,   3668679.9947] ENU: [  0.071,  -0.337,   2.841] ZTD: [0.1003284] mode [5]
+2023-08-11 21:00:20  G01 - edit - satellite unhealthy
+2023-08-11 21:00:20  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:20  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:20  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:20  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:20  E25 - edit - satellite unhealthy
+2023-08-11 21:00:20 Sol: [ -3962110.6908,   3381311.0740,   3668679.9995] ENU: [  0.091,  -0.369,   2.895] ZTD: [0.1038194] mode [5]
+2023-08-11 21:00:21  G01 - edit - satellite unhealthy
+2023-08-11 21:00:21  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:21  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:21  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:21  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:21  E25 - edit - satellite unhealthy
+2023-08-11 21:00:21 Sol: [ -3962110.7686,   3381311.1003,   3668680.0073] ENU: [  0.122,  -0.407,   2.962] ZTD: [0.1065450] mode [5]
+2023-08-11 21:00:22  G01 - edit - satellite unhealthy
+2023-08-11 21:00:22  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:22  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:22  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:22  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:22  E25 - edit - satellite unhealthy
+2023-08-11 21:00:22 Sol: [ -3962110.8500,   3381311.1392,   3668680.0141] ENU: [  0.145,  -0.452,   3.037] ZTD: [0.1037572] mode [5]
+2023-08-11 21:00:23  G01 - edit - satellite unhealthy
+2023-08-11 21:00:23  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:23  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:23  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:23  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:23  E25 - edit - satellite unhealthy
+2023-08-11 21:00:23 Sol: [ -3962110.8885,   3381311.1571,   3668680.0051] ENU: [  0.157,  -0.483,   3.065] ZTD: [0.1050602] mode [5]
+2023-08-11 21:00:24  G01 - edit - satellite unhealthy
+2023-08-11 21:00:24  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:24  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:24  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:24  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:24  E25 - edit - satellite unhealthy
+2023-08-11 21:00:24  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:24  G03 - reset ionosphere
+2023-08-11 21:00:24  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:24  G08 - reset ionosphere
+2023-08-11 21:00:24  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:24  G14 - reset ionosphere
+2023-08-11 21:00:24  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:24  G27 - reset ionosphere
+2023-08-11 21:00:24  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:24  G30 - reset ionosphere
+2023-08-11 21:00:24  G03 - init  ambiguity  GL1C       32.583
+2023-08-11 21:00:24  G03 - init  ionosphere             4.130
+2023-08-11 21:00:24  G08 - init  ambiguity  GL1C       89.028
+2023-08-11 21:00:24  G08 - init  ionosphere             2.428
+2023-08-11 21:00:24  G14 - init  ambiguity  GL1C       70.210
+2023-08-11 21:00:24  G14 - init  ionosphere             5.906
+2023-08-11 21:00:24  G27 - init  ambiguity  GL1C      110.217
+2023-08-11 21:00:24  G27 - init  ionosphere            10.353
+2023-08-11 21:00:24  G30 - init  ambiguity  GL1C       48.133
+2023-08-11 21:00:24  G30 - init  ionosphere             4.587
+2023-08-11 21:00:24  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:24  G03 - reset ionosphere
+2023-08-11 21:00:24  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:24  G08 - reset ionosphere
+2023-08-11 21:00:24  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:24  G14 - reset ionosphere
+2023-08-11 21:00:24  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:24  G27 - reset ionosphere
+2023-08-11 21:00:24  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:24  G30 - reset ionosphere
+2023-08-11 21:00:24  G03 - init  ambiguity  GL5Q       30.008
+2023-08-11 21:00:24  G03 - init  ionosphere             4.130
+2023-08-11 21:00:24  G08 - init  ambiguity  GL5Q      122.231
+2023-08-11 21:00:24  G08 - init  ionosphere             2.428
+2023-08-11 21:00:24  G14 - init  ambiguity  GL5Q       95.854
+2023-08-11 21:00:24  G14 - init  ionosphere             5.906
+2023-08-11 21:00:24  G27 - init  ambiguity  GL5Q      146.918
+2023-08-11 21:00:24  G27 - init  ionosphere            10.353
+2023-08-11 21:00:24  G30 - init  ambiguity  GL5Q       50.665
+2023-08-11 21:00:24  G30 - init  ionosphere             4.587
+2023-08-11 21:00:24 Sol: [ -3962110.9529,   3381311.1678,   3668679.9987] ENU: [  0.190,  -0.521,   3.107] ZTD: [0.1070724] mode [5]
+2023-08-11 21:00:25  G01 - edit - satellite unhealthy
+2023-08-11 21:00:25  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:25  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:25  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:25  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:25  E25 - edit - satellite unhealthy
+2023-08-11 21:00:25 Sol: [ -3962111.0019,   3381311.1844,   3668680.0065] ENU: [  0.209,  -0.542,   3.150] ZTD: [0.1046408] mode [5]
+2023-08-11 21:00:26  G01 - edit - satellite unhealthy
+2023-08-11 21:00:26  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:26  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:26  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:26  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:26  E25 - edit - satellite unhealthy
+2023-08-11 21:00:26 Sol: [ -3962111.0512,   3381311.2021,   3668680.0039] ENU: [  0.228,  -0.572,   3.189] ZTD: [0.1010052] mode [5]
+2023-08-11 21:00:27  G01 - edit - satellite unhealthy
+2023-08-11 21:00:27  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:27  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:27  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:27  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:27  E25 - edit - satellite unhealthy
+2023-08-11 21:00:27 Sol: [ -3962111.0847,   3381311.2088,   3668680.0011] ENU: [  0.245,  -0.592,   3.212] ZTD: [0.0969127] mode [5]
+2023-08-11 21:00:28  G01 - edit - satellite unhealthy
+2023-08-11 21:00:28  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:28  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:28  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:28  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:28  E25 - edit - satellite unhealthy
+2023-08-11 21:00:28 Sol: [ -3962111.1088,   3381311.2062,   3668679.9944] ENU: [  0.262,  -0.607,   3.221] ZTD: [0.0957362] mode [5]
+2023-08-11 21:00:29  G01 - edit - satellite unhealthy
+2023-08-11 21:00:29  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:29  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:29  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:29  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:29  E25 - edit - satellite unhealthy
+2023-08-11 21:00:29 Sol: [ -3962111.1086,   3381311.1879,   3668679.9795] ENU: [  0.276,  -0.612,   3.203] ZTD: [0.0966939] mode [5]
+2023-08-11 21:00:30  G01 - edit - satellite unhealthy
+2023-08-11 21:00:30  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:30  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:30  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:30  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:30  E25 - edit - satellite unhealthy
+2023-08-11 21:00:30  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:30  G03 - reset ionosphere
+2023-08-11 21:00:30  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:30  G08 - reset ionosphere
+2023-08-11 21:00:30  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:30  G14 - reset ionosphere
+2023-08-11 21:00:30  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:30  G27 - reset ionosphere
+2023-08-11 21:00:30  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:30  G30 - reset ionosphere
+2023-08-11 21:00:30  G03 - init  ambiguity  GL1C       29.666
+2023-08-11 21:00:30  G03 - init  ionosphere             3.917
+2023-08-11 21:00:30  G08 - init  ambiguity  GL1C       87.427
+2023-08-11 21:00:30  G08 - init  ionosphere             2.355
+2023-08-11 21:00:30  G14 - init  ambiguity  GL1C       66.431
+2023-08-11 21:00:30  G14 - init  ionosphere             5.658
+2023-08-11 21:00:30  G27 - init  ambiguity  GL1C      107.701
+2023-08-11 21:00:30  G27 - init  ionosphere            10.314
+2023-08-11 21:00:30  G30 - init  ambiguity  GL1C       56.666
+2023-08-11 21:00:30  G30 - init  ionosphere             5.162
+2023-08-11 21:00:30  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:30  G03 - reset ionosphere
+2023-08-11 21:00:30  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:30  G08 - reset ionosphere
+2023-08-11 21:00:30  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:30  G14 - reset ionosphere
+2023-08-11 21:00:30  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:30  G27 - reset ionosphere
+2023-08-11 21:00:30  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:30  G30 - reset ionosphere
+2023-08-11 21:00:30  G03 - init  ambiguity  GL5Q       27.177
+2023-08-11 21:00:30  G03 - init  ionosphere             3.917
+2023-08-11 21:00:30  G08 - init  ambiguity  GL5Q      120.799
+2023-08-11 21:00:30  G08 - init  ionosphere             2.355
+2023-08-11 21:00:30  G14 - init  ambiguity  GL5Q       92.261
+2023-08-11 21:00:30  G14 - init  ionosphere             5.658
+2023-08-11 21:00:30  G27 - init  ambiguity  GL5Q      144.887
+2023-08-11 21:00:30  G27 - init  ionosphere            10.314
+2023-08-11 21:00:30  G30 - init  ambiguity  GL5Q       58.810
+2023-08-11 21:00:30  G30 - init  ionosphere             5.162
+2023-08-11 21:00:30 Sol: [ -3962111.0957,   3381311.1694,   3668679.9634] ENU: [  0.282,  -0.613,   3.176] ZTD: [0.0944314] mode [5]
+2023-08-11 21:00:31  G01 - edit - satellite unhealthy
+2023-08-11 21:00:31  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:31  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:31  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:31  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:31  E25 - edit - satellite unhealthy
+2023-08-11 21:00:31 Sol: [ -3962111.0809,   3381311.1380,   3668679.9429] ENU: [  0.296,  -0.611,   3.138] ZTD: [0.0958694] mode [5]
+2023-08-11 21:00:32  G01 - edit - satellite unhealthy
+2023-08-11 21:00:32  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:32  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:32  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:32  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:32  E25 - edit - satellite unhealthy
+2023-08-11 21:00:32 Sol: [ -3962111.0419,   3381311.1001,   3668679.9243] ENU: [  0.300,  -0.595,   3.083] ZTD: [0.1024781] mode [5]
+2023-08-11 21:00:33  G01 - edit - satellite unhealthy
+2023-08-11 21:00:33  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:33  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:33  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:33  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:33  E25 - edit - satellite unhealthy
+2023-08-11 21:00:33 Sol: [ -3962111.0359,   3381311.0813,   3668679.9191] ENU: [  0.310,  -0.590,   3.066] ZTD: [0.1033369] mode [5]
+2023-08-11 21:00:34  G01 - edit - satellite unhealthy
+2023-08-11 21:00:34  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:34  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:34  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:34  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:34  E25 - edit - satellite unhealthy
+2023-08-11 21:00:34 Sol: [ -3962111.0241,   3381311.0602,   3668679.9059] ENU: [  0.318,  -0.587,   3.040] ZTD: [0.1074226] mode [5]
+2023-08-11 21:00:35  G01 - edit - satellite unhealthy
+2023-08-11 21:00:35  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:35  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:35  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:35  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:35  E25 - edit - satellite unhealthy
+2023-08-11 21:00:35 Sol: [ -3962111.0320,   3381311.0499,   3668679.9013] ENU: [  0.331,  -0.591,   3.037] ZTD: [0.1077798] mode [5]
+2023-08-11 21:00:36  G01 - edit - satellite unhealthy
+2023-08-11 21:00:36  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:36  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:36  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:36  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:36  E25 - edit - satellite unhealthy
+2023-08-11 21:00:36  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:36  G03 - reset ionosphere
+2023-08-11 21:00:36  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:36  G08 - reset ionosphere
+2023-08-11 21:00:36  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:36  G14 - reset ionosphere
+2023-08-11 21:00:36  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:36  G27 - reset ionosphere
+2023-08-11 21:00:36  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:36  G30 - reset ionosphere
+2023-08-11 21:00:36  G03 - init  ambiguity  GL1C       36.338
+2023-08-11 21:00:36  G03 - init  ionosphere             4.389
+2023-08-11 21:00:36  G08 - init  ambiguity  GL1C       87.935
+2023-08-11 21:00:36  G08 - init  ionosphere             2.400
+2023-08-11 21:00:36  G14 - init  ambiguity  GL1C       57.207
+2023-08-11 21:00:36  G14 - init  ionosphere             5.005
+2023-08-11 21:00:36  G27 - init  ambiguity  GL1C      100.503
+2023-08-11 21:00:36  G27 - init  ionosphere             9.739
+2023-08-11 21:00:36  G30 - init  ambiguity  GL1C       50.563
+2023-08-11 21:00:36  G30 - init  ionosphere             4.717
+2023-08-11 21:00:36  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:36  G03 - reset ionosphere
+2023-08-11 21:00:36  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:36  G08 - reset ionosphere
+2023-08-11 21:00:36  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:36  G14 - reset ionosphere
+2023-08-11 21:00:36  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:36  G27 - reset ionosphere
+2023-08-11 21:00:36  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:36  G30 - reset ionosphere
+2023-08-11 21:00:36  G03 - init  ambiguity  GL5Q       33.647
+2023-08-11 21:00:36  G03 - init  ionosphere             4.389
+2023-08-11 21:00:36  G08 - init  ambiguity  GL5Q      121.313
+2023-08-11 21:00:36  G08 - init  ionosphere             2.400
+2023-08-11 21:00:36  G14 - init  ambiguity  GL5Q       83.342
+2023-08-11 21:00:36  G14 - init  ionosphere             5.005
+2023-08-11 21:00:36  G27 - init  ambiguity  GL5Q      137.637
+2023-08-11 21:00:36  G27 - init  ionosphere             9.739
+2023-08-11 21:00:36  G30 - init  ambiguity  GL5Q       52.848
+2023-08-11 21:00:36  G30 - init  ionosphere             4.717
+2023-08-11 21:00:36 Sol: [ -3962111.0504,   3381311.0463,   3668679.9052] ENU: [  0.346,  -0.594,   3.049] ZTD: [0.1044427] mode [5]
+2023-08-11 21:00:37  G01 - edit - satellite unhealthy
+2023-08-11 21:00:37  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:37  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:37  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:37  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:37  E25 - edit - satellite unhealthy
+2023-08-11 21:00:37 Sol: [ -3962111.0389,   3381311.0150,   3668679.8930] ENU: [  0.362,  -0.587,   3.018] ZTD: [0.1100841] mode [5]
+2023-08-11 21:00:38  G01 - edit - satellite unhealthy
+2023-08-11 21:00:38  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:38  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:38  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:38  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:38  E25 - edit - satellite unhealthy
+2023-08-11 21:00:38 Sol: [ -3962111.0304,   3381310.9884,   3668679.8802] ENU: [  0.377,  -0.584,   2.991] ZTD: [0.1107878] mode [5]
+2023-08-11 21:00:39  G01 - edit - satellite unhealthy
+2023-08-11 21:00:39  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:39  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:39  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:39  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:39  E25 - edit - satellite unhealthy
+2023-08-11 21:00:39 Sol: [ -3962111.0177,   3381310.9695,   3668679.8707] ENU: [  0.383,  -0.579,   2.968] ZTD: [0.1125701] mode [5]
+2023-08-11 21:00:40  G01 - edit - satellite unhealthy
+2023-08-11 21:00:40  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:40  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:40  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:40  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:40  E25 - edit - satellite unhealthy
+2023-08-11 21:00:40 Sol: [ -3962111.0004,   3381310.9477,   3668679.8579] ENU: [  0.388,  -0.574,   2.938] ZTD: [0.1149283] mode [5]
+2023-08-11 21:00:41  G01 - edit - satellite unhealthy
+2023-08-11 21:00:41  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:41  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:41  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:41  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:41  E25 - edit - satellite unhealthy
+2023-08-11 21:00:41 Sol: [ -3962110.9782,   3381310.9232,   3668679.8429] ENU: [  0.393,  -0.567,   2.903] ZTD: [0.1184991] mode [5]
+2023-08-11 21:00:42  G01 - edit - satellite unhealthy
+2023-08-11 21:00:42  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:42  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:42  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:42  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:42  E25 - edit - satellite unhealthy
+2023-08-11 21:00:42  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:42  G03 - reset ionosphere
+2023-08-11 21:00:42  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:42  G08 - reset ionosphere
+2023-08-11 21:00:42  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:42  G14 - reset ionosphere
+2023-08-11 21:00:42  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:42  G27 - reset ionosphere
+2023-08-11 21:00:42  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:42  G30 - reset ionosphere
+2023-08-11 21:00:42  G03 - init  ambiguity  GL1C       34.717
+2023-08-11 21:00:42  G03 - init  ionosphere             4.389
+2023-08-11 21:00:42  G08 - init  ambiguity  GL1C       91.460
+2023-08-11 21:00:42  G08 - init  ionosphere             2.670
+2023-08-11 21:00:42  G14 - init  ambiguity  GL1C       62.915
+2023-08-11 21:00:42  G14 - init  ionosphere             5.409
+2023-08-11 21:00:42  G27 - init  ambiguity  GL1C       92.437
+2023-08-11 21:00:42  G27 - init  ionosphere             9.202
+2023-08-11 21:00:42  G30 - init  ambiguity  GL1C       43.914
+2023-08-11 21:00:42  G30 - init  ionosphere             4.175
+2023-08-11 21:00:42  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:42  G03 - reset ionosphere
+2023-08-11 21:00:42  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:42  G08 - reset ionosphere
+2023-08-11 21:00:42  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:42  G14 - reset ionosphere
+2023-08-11 21:00:42  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:42  G27 - reset ionosphere
+2023-08-11 21:00:42  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:42  G30 - reset ionosphere
+2023-08-11 21:00:42  G03 - init  ambiguity  GL5Q       32.442
+2023-08-11 21:00:42  G03 - init  ionosphere             4.389
+2023-08-11 21:00:42  G08 - init  ambiguity  GL5Q      124.767
+2023-08-11 21:00:42  G08 - init  ionosphere             2.670
+2023-08-11 21:00:42  G14 - init  ambiguity  GL5Q       88.867
+2023-08-11 21:00:42  G14 - init  ionosphere             5.409
+2023-08-11 21:00:42  G27 - init  ambiguity  GL5Q      129.892
+2023-08-11 21:00:42  G27 - init  ionosphere             9.202
+2023-08-11 21:00:42  G30 - init  ambiguity  GL5Q       46.168
+2023-08-11 21:00:42  G30 - init  ionosphere             4.175
+2023-08-11 21:00:42 Sol: [ -3962110.9709,   3381310.8999,   3668679.8347] ENU: [  0.406,  -0.562,   2.881] ZTD: [0.1214966] mode [5]
+2023-08-11 21:00:43  G01 - edit - satellite unhealthy
+2023-08-11 21:00:43  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:43  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:43  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:43  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:43  E25 - edit - satellite unhealthy
+2023-08-11 21:00:43 Sol: [ -3962110.9672,   3381310.8745,   3668679.8284] ENU: [  0.423,  -0.556,   2.862] ZTD: [0.1227792] mode [5]
+2023-08-11 21:00:44  G01 - edit - satellite unhealthy
+2023-08-11 21:00:44  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:44  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:44  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:44  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:44  E25 - edit - satellite unhealthy
+2023-08-11 21:00:44 Sol: [ -3962110.9693,   3381310.8551,   3668679.8210] ENU: [  0.439,  -0.555,   2.849] ZTD: [0.1241707] mode [5]
+2023-08-11 21:00:45  G01 - edit - satellite unhealthy
+2023-08-11 21:00:45  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:45  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:45  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:45  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:45  E25 - edit - satellite unhealthy
+2023-08-11 21:00:45 Sol: [ -3962110.9542,   3381310.8197,   3668679.8049] ENU: [  0.456,  -0.549,   2.811] ZTD: [0.1281103] mode [5]
+2023-08-11 21:00:46  G01 - edit - satellite unhealthy
+2023-08-11 21:00:46  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:46  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:46  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:46  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:46  E25 - edit - satellite unhealthy
+2023-08-11 21:00:46 Sol: [ -3962110.9510,   3381310.7978,   3668679.7971] ENU: [  0.470,  -0.545,   2.793] ZTD: [0.1282265] mode [5]
+2023-08-11 21:00:47  G01 - edit - satellite unhealthy
+2023-08-11 21:00:47  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:47  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:47  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:47  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:47  E25 - edit - satellite unhealthy
+2023-08-11 21:00:47 Sol: [ -3962110.9341,   3381310.7690,   3668679.7852] ENU: [  0.481,  -0.537,   2.760] ZTD: [0.1308076] mode [5]
+2023-08-11 21:00:48  G01 - edit - satellite unhealthy
+2023-08-11 21:00:48  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:48  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:48  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:48  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:48  E25 - edit - satellite unhealthy
+2023-08-11 21:00:48  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:48  G03 - reset ionosphere
+2023-08-11 21:00:48  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:48  G08 - reset ionosphere
+2023-08-11 21:00:48  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:48  G14 - reset ionosphere
+2023-08-11 21:00:48  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:48  G27 - reset ionosphere
+2023-08-11 21:00:48  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:48  G30 - reset ionosphere
+2023-08-11 21:00:48  G03 - init  ambiguity  GL1C       37.353
+2023-08-11 21:00:48  G03 - init  ionosphere             4.576
+2023-08-11 21:00:48  G08 - init  ambiguity  GL1C       97.214
+2023-08-11 21:00:48  G08 - init  ionosphere             3.094
+2023-08-11 21:00:48  G14 - init  ambiguity  GL1C       65.920
+2023-08-11 21:00:48  G14 - init  ionosphere             5.591
+2023-08-11 21:00:48  G27 - init  ambiguity  GL1C      115.967
+2023-08-11 21:00:48  G27 - init  ionosphere            10.918
+2023-08-11 21:00:48  G30 - init  ambiguity  GL1C       31.818
+2023-08-11 21:00:48  G30 - init  ionosphere             3.308
+2023-08-11 21:00:48  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:48  G03 - reset ionosphere
+2023-08-11 21:00:48  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:48  G08 - reset ionosphere
+2023-08-11 21:00:48  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:48  G14 - reset ionosphere
+2023-08-11 21:00:48  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:48  G27 - reset ionosphere
+2023-08-11 21:00:48  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:48  G30 - reset ionosphere
+2023-08-11 21:00:48  G03 - init  ambiguity  GL5Q       34.996
+2023-08-11 21:00:48  G03 - init  ionosphere             4.576
+2023-08-11 21:00:48  G08 - init  ambiguity  GL5Q      130.374
+2023-08-11 21:00:48  G08 - init  ionosphere             3.094
+2023-08-11 21:00:48  G14 - init  ambiguity  GL5Q       91.677
+2023-08-11 21:00:48  G14 - init  ionosphere             5.591
+2023-08-11 21:00:48  G27 - init  ambiguity  GL5Q      152.774
+2023-08-11 21:00:48  G27 - init  ionosphere            10.918
+2023-08-11 21:00:48  G30 - init  ambiguity  GL5Q       34.419
+2023-08-11 21:00:48  G30 - init  ionosphere             3.308
+2023-08-11 21:00:48 Sol: [ -3962110.9285,   3381310.7555,   3668679.7878] ENU: [  0.488,  -0.527,   2.751] ZTD: [0.1294626] mode [5]
+2023-08-11 21:00:49  G01 - edit - satellite unhealthy
+2023-08-11 21:00:49  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:49  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:49  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:49  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:49  E25 - edit - satellite unhealthy
+2023-08-11 21:00:49 Sol: [ -3962110.9161,   3381310.7361,   3668679.7838] ENU: [  0.495,  -0.518,   2.731] ZTD: [0.1312032] mode [5]
+2023-08-11 21:00:50  G01 - edit - satellite unhealthy
+2023-08-11 21:00:50  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:50  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:50  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:50  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:50  E25 - edit - satellite unhealthy
+2023-08-11 21:00:50 Sol: [ -3962110.9031,   3381310.7189,   3668679.7826] ENU: [  0.499,  -0.506,   2.713] ZTD: [0.1329069] mode [5]
+2023-08-11 21:00:51  G01 - edit - satellite unhealthy
+2023-08-11 21:00:51  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:51  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:51  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:51  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:51  E25 - edit - satellite unhealthy
+2023-08-11 21:00:51 Sol: [ -3962110.8715,   3381310.6953,   3668679.7724] ENU: [  0.497,  -0.492,   2.675] ZTD: [0.1368231] mode [5]
+2023-08-11 21:00:52  G01 - edit - satellite unhealthy
+2023-08-11 21:00:52  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:52  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:52  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:52  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:52  E25 - edit - satellite unhealthy
+2023-08-11 21:00:52 Sol: [ -3962110.8484,   3381310.6866,   3668679.7688] ENU: [  0.488,  -0.481,   2.654] ZTD: [0.1384814] mode [5]
+2023-08-11 21:00:53  G01 - edit - satellite unhealthy
+2023-08-11 21:00:53  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:53  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:53  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:53  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:53  E25 - edit - satellite unhealthy
+2023-08-11 21:00:53 Sol: [ -3962110.8308,   3381310.6805,   3668679.7712] ENU: [  0.482,  -0.469,   2.641] ZTD: [0.1401996] mode [5]
+2023-08-11 21:00:54  G01 - edit - satellite unhealthy
+2023-08-11 21:00:54  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:54  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:54  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:54  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:54  E25 - edit - satellite unhealthy
+2023-08-11 21:00:54  G03 - reset ambiguity  GL1C
+2023-08-11 21:00:54  G03 - reset ionosphere
+2023-08-11 21:00:54  G08 - reset ambiguity  GL1C
+2023-08-11 21:00:54  G08 - reset ionosphere
+2023-08-11 21:00:54  G14 - reset ambiguity  GL1C
+2023-08-11 21:00:54  G14 - reset ionosphere
+2023-08-11 21:00:54  G27 - reset ambiguity  GL1C
+2023-08-11 21:00:54  G27 - reset ionosphere
+2023-08-11 21:00:54  G30 - reset ambiguity  GL1C
+2023-08-11 21:00:54  G30 - reset ionosphere
+2023-08-11 21:00:54  G03 - init  ambiguity  GL1C       40.276
+2023-08-11 21:00:54  G03 - init  ionosphere             4.700
+2023-08-11 21:00:54  G08 - init  ambiguity  GL1C       94.278
+2023-08-11 21:00:54  G08 - init  ionosphere             2.941
+2023-08-11 21:00:54  G14 - init  ambiguity  GL1C       63.419
+2023-08-11 21:00:54  G14 - init  ionosphere             5.393
+2023-08-11 21:00:54  G27 - init  ambiguity  GL1C      106.321
+2023-08-11 21:00:54  G27 - init  ionosphere            10.426
+2023-08-11 21:00:54  G30 - init  ambiguity  GL1C       23.994
+2023-08-11 21:00:54  G30 - init  ionosphere             2.743
+2023-08-11 21:00:54  G03 - reset ambiguity  GL5Q
+2023-08-11 21:00:54  G03 - reset ionosphere
+2023-08-11 21:00:54  G08 - reset ambiguity  GL5Q
+2023-08-11 21:00:54  G08 - reset ionosphere
+2023-08-11 21:00:54  G14 - reset ambiguity  GL5Q
+2023-08-11 21:00:54  G14 - reset ionosphere
+2023-08-11 21:00:54  G27 - reset ambiguity  GL5Q
+2023-08-11 21:00:54  G27 - reset ionosphere
+2023-08-11 21:00:54  G30 - reset ambiguity  GL5Q
+2023-08-11 21:00:54  G30 - reset ionosphere
+2023-08-11 21:00:54  G03 - init  ambiguity  GL5Q       37.578
+2023-08-11 21:00:54  G03 - init  ionosphere             4.700
+2023-08-11 21:00:54  G08 - init  ambiguity  GL5Q      127.687
+2023-08-11 21:00:54  G08 - init  ionosphere             2.941
+2023-08-11 21:00:54  G14 - init  ambiguity  GL5Q       89.185
+2023-08-11 21:00:54  G14 - init  ionosphere             5.393
+2023-08-11 21:00:54  G27 - init  ambiguity  GL5Q      143.991
+2023-08-11 21:00:54  G27 - init  ionosphere            10.426
+2023-08-11 21:00:54  G30 - init  ambiguity  GL5Q       26.801
+2023-08-11 21:00:54  G30 - init  ionosphere             2.743
+2023-08-11 21:00:54 Sol: [ -3962110.8096,   3381310.6690,   3668679.7678] ENU: [  0.477,  -0.459,   2.620] ZTD: [0.1423552] mode [5]
+2023-08-11 21:00:55  G01 - edit - satellite unhealthy
+2023-08-11 21:00:55  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:55  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:55  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:55  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:55  E25 - edit - satellite unhealthy
+2023-08-11 21:00:55 Sol: [ -3962110.7924,   3381310.6531,   3668679.7612] ENU: [  0.478,  -0.450,   2.597] ZTD: [0.1452378] mode [5]
+2023-08-11 21:00:56  G01 - edit - satellite unhealthy
+2023-08-11 21:00:56  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:56  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:56  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:56  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:56  E25 - edit - satellite unhealthy
+2023-08-11 21:00:56 Sol: [ -3962110.7611,   3381310.6361,   3668679.7489] ENU: [  0.470,  -0.440,   2.562] ZTD: [0.1492394] mode [5]
+2023-08-11 21:00:57  G01 - edit - satellite unhealthy
+2023-08-11 21:00:57  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:57  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:57  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:57  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:57  E25 - edit - satellite unhealthy
+2023-08-11 21:00:57 Sol: [ -3962110.7235,   3381310.6210,   3668679.7315] ENU: [  0.457,  -0.432,   2.520] ZTD: [0.1531246] mode [5]
+2023-08-11 21:00:58  G01 - edit - satellite unhealthy
+2023-08-11 21:00:58  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:58  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:58  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:58  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:58  E25 - edit - satellite unhealthy
+2023-08-11 21:00:58 Sol: [ -3962110.6825,   3381310.6033,   3668679.7064] ENU: [  0.444,  -0.428,   2.471] ZTD: [0.1599626] mode [5]
+2023-08-11 21:00:59  G01 - edit - satellite unhealthy
+2023-08-11 21:00:59  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:59  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:59  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:59  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:00:59  E25 - edit - satellite unhealthy
+2023-08-11 21:00:59 Sol: [ -3962110.6419,   3381310.5821,   3668679.6725] ENU: [  0.434,  -0.430,   2.415] ZTD: [0.1674021] mode [5]
+2023-08-11 21:01:00  G01 - edit - satellite unhealthy
+2023-08-11 21:01:00  G02 - edit C5Q  - invalid PR obs
+2023-08-11 21:01:00  G07 - edit C5Q  - invalid PR obs
+2023-08-11 21:01:00  G17 - edit C5Q  - invalid PR obs
+2023-08-11 21:01:00  G21 - edit C5Q  - invalid PR obs
+2023-08-11 21:01:00  E25 - edit - satellite unhealthy
+2023-08-11 21:01:00  G03 - reset ambiguity  GL1C
+2023-08-11 21:01:00  G03 - reset ionosphere
+2023-08-11 21:01:00  G08 - reset ambiguity  GL1C
+2023-08-11 21:01:00  G08 - reset ionosphere
+2023-08-11 21:01:00  G14 - reset ambiguity  GL1C
+2023-08-11 21:01:00  G14 - reset ionosphere
+2023-08-11 21:01:00  G27 - reset ambiguity  GL1C
+2023-08-11 21:01:00  G27 - reset ionosphere
+2023-08-11 21:01:00  G30 - reset ambiguity  GL1C
+2023-08-11 21:01:00  G30 - reset ionosphere
+2023-08-11 21:01:00  G03 - init  ambiguity  GL1C       37.341
+2023-08-11 21:01:00  G03 - init  ionosphere             4.485
+2023-08-11 21:01:00  G08 - init  ambiguity  GL1C       95.473
+2023-08-11 21:01:00  G08 - init  ionosphere             3.048
+2023-08-11 21:01:00  G14 - init  ambiguity  GL1C       61.810
+2023-08-11 21:01:00  G14 - init  ionosphere             5.302
+2023-08-11 21:01:00  G27 - init  ambiguity  GL1C      121.870
+2023-08-11 21:01:00  G27 - init  ionosphere            11.475
+2023-08-11 21:01:00  G30 - init  ambiguity  GL1C       35.024
+2023-08-11 21:01:00  G30 - init  ionosphere             3.443
+2023-08-11 21:01:00  G03 - reset ambiguity  GL5Q
+2023-08-11 21:01:00  G03 - reset ionosphere
+2023-08-11 21:01:00  G08 - reset ambiguity  GL5Q
+2023-08-11 21:01:00  G08 - reset ionosphere
+2023-08-11 21:01:00  G14 - reset ambiguity  GL5Q
+2023-08-11 21:01:00  G14 - reset ionosphere
+2023-08-11 21:01:00  G27 - reset ambiguity  GL5Q
+2023-08-11 21:01:00  G27 - reset ionosphere
+2023-08-11 21:01:00  G30 - reset ambiguity  GL5Q
+2023-08-11 21:01:00  G30 - reset ionosphere
+2023-08-11 21:01:00  G03 - init  ambiguity  GL5Q       34.725
+2023-08-11 21:01:00  G03 - init  ionosphere             4.485
+2023-08-11 21:01:00  G08 - init  ambiguity  GL5Q      128.902
+2023-08-11 21:01:00  G08 - init  ionosphere             3.048
+2023-08-11 21:01:00  G14 - init  ambiguity  GL5Q       87.706
+2023-08-11 21:01:00  G14 - init  ionosphere             5.302
+2023-08-11 21:01:00  G27 - init  ambiguity  GL5Q      158.828
+2023-08-11 21:01:00  G27 - init  ionosphere            11.475
+2023-08-11 21:01:00  G30 - init  ambiguity  GL5Q       37.200
+2023-08-11 21:01:00  G30 - init  ionosphere             3.443
+2023-08-11 21:01:00 Sol: [ -3962110.6015,   3381310.5638,   3668679.6386] ENU: [  0.422,  -0.433,   2.361] ZTD: [0.1705937] mode [5]
