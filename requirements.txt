@@ -1,0 +1,8 @@
+pyserial
+pyubx2
+matplotlib
+numpy
+pandas
+simplekml
+pymap3d
+cssrlib
