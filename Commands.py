@@ -1,10 +1,12 @@
 import argparse
 import os
 import re
+
 from src.funciones import *
 from src.PPPsolution import ParametrosPPP, pppModule
 from src.RTKsolution import ParametrosRTK, rtkModule
 from src.plot import *
+from src.ubx_parser import *
 
 from cssrlib.plot import skyplot
 
@@ -37,7 +39,7 @@ def parse_arguments():
     parser.add_argument('-rtk', '--rtk', action='store_true', help='Run RTK solution.')
 
     parser.add_argument('-b', '--basefile', type=str, default=None, help='Base station observation file for RTK solution.')
-    parser.add_argument('-y', '--xyz_ref_base', type=str, default=None, help='Base station XYZ reference for RTK solution.')
+    parser.add_argument('-y', '--xyz_ref_base', type=float, nargs=3, default=None, help='Base station XYZ reference for RTK solution.')
     parser.add_argument('-g', '--armode', type=int, default=3, help='AR mode for RTK solution.')
 
     parser.add_argument('-f', '--freq', type=int, default=None, help='System frequency.')
@@ -51,6 +53,7 @@ def parse_arguments():
     parser.add_argument('-getdata', '--getdata', action='store_true', help='Get data form UBLOX reciever. Must input too: -t <int> -port <str>')
 
     parser.add_argument('-plot', '--plot', action='store_true', help='Plot all the data computed by the rtk or ppp module.')
+    parser.add_argument('-kml', '--kml', action='store_true', help='Plot kml map.')
 
     return parser.parse_args() 
 
@@ -112,6 +115,14 @@ def get_files(args, folder):
                 args.navfile = file
             elif '.rnx' in file:
                 args.navfile = file
+            elif '.SP3' in file:
+                args.orbfile = file
+            elif '.CLK' in file:
+                args.clkfile = file
+            elif '.BIA' in file:
+                args.bsxfile = file
+            elif '.atx' in file:
+                args.atxfile = file
 
 def print_help():
     print( 
@@ -300,6 +311,11 @@ def process_input(args):
         navfile, obsfile, orbfile, clkfile, bsxfile = construct_file_paths(args.folder, args.navfile, args.obsfile, args.orbfile, args.clkfile, args.bsxfile)
         basefile = f"{args.folder}\\{args.basefile}" if args.basefile else None
 
+        if args.atxfile != 'data/rinex/file_creator/I20.ATX':
+            atxfile = f"{args.folder}\\{args.atxfile}"
+        else:
+            atxfile = args.atxfile
+
         if not check_parameters(args):
             return ret
 
@@ -310,7 +326,7 @@ def process_input(args):
             orbfile=orbfile,
             clkfile=clkfile,
             bsxfile=bsxfile,
-            atxfile=args.atxfile,  # Mantenerlo siempre
+            atxfile=atxfile,  
             csfile=None,
             xyz_ref=args.xyz_ref,
             xyz_ref_base=args.xyz_ref_base,
@@ -330,18 +346,26 @@ def process_input(args):
 
     if args.plot == True:
         plt_northEast(enu, smode)
-        plt_error(t, enu, 10)
+        plt_error(t, enu, 1)
         # plt.show()
+        plt.show()
         _ = skyplot(azm, elv)
         # plt_NorthEastUp(t,enu,ztd,smode)
-        plt.show()
         
         cdf_horizontal_error([enu], ['solution'])
         histogram_horizontal_error([enu], ['solution'])
         horizontal_error_over_time([enu], ['solution'])
         # trajectory_plot([enu], ['solution']) # NOTE: no me gusta mucho, quizas un refactor o no utilizarlo
         scatter_plot_reference_center([enu], ['solution'])
+    
+    if args.kml == True:
+        if name or (args.getdata and args.ppp): 
+            createKML(sol_, name) 
+        else:
+            createKML(sol_, name = "solution")
 
+        # TODO: issues with long processing time
+        show_kml(sol_)
 
     return ret
 
