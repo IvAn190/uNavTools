@@ -200,7 +200,9 @@ def pppModule(parameters: ParametrosPPP):
         atx.readpcv(atxfile)
     else:
         raise ValueError("Missing ATX file!!!")
+    #TODO: hacer una funcion que cree un archivo .atx y meta los parametros .atx, quizas meto en data permanentemente el archivo no? 
 
+    #TODO: añadir el modulo de carga de los archivos cssr, el csfile. 
     if csfile is not None:
         pass
     else: cs = None
@@ -313,6 +315,7 @@ def pppModule(parameters: ParametrosPPP):
     nav.fout.write("\n")
 
     nav.fout.write("SETUP:\n") 
+    #TODO: guardar la configuracion "nav.@" que haya cambiado en la configuracion arriba (linea 100)
     nav.fout.write("Minimum elevation: {}\n".format(nav.elmin * 180/np.pi))
     nav.fout.write("Ambiguity: {}\n".format(nav.thresar))
     nav.fout.write("ARmode: {} (0:float-ppp,1:continuous,2:instantaneous,3:fix-and-hold)\n".format(nav.armode))
@@ -378,6 +381,12 @@ def pppModule(parameters: ParametrosPPP):
     #                                  --> nav.x  == mode=5 (valor flotante --> --precision)
     #NOTE: matriz obs.lli --> cada fila corresponde a un satélite y cada columna a una señal de fase de portadora (L). Al tener
     #      un receptor songle-frequency (L1), la matriz obs.lli es de Mx1, dando error ya que se necesita de Mx2. 
+
+
+    # TODO: Encontrar un archivo de ionosfera
+    #       En el codigo, el archivo se llama cs (cssr) y se mete en la funcion porcess() y se ejecuta en pppssr.py line 491
+    #       Aqui hay un ejemoplo de como utilizar el cs --> (https://github.com/hirokawa/cssrlib-data/blob/main/samples/test_ppprtcm.py)
+    # TODO: Comprobar que hacen los paramtros de na. relacionados con la iono y tropo.  
 
     # Loop over number of epoch from file start
     for ne in range(nep):

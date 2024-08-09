@@ -92,6 +92,8 @@ def rtkModule(parameters: ParametrosRTK):
 
     atxfile = parameters.atxfile
 
+    # TODO: ver que hacer con el single y dual frequency
+    # TODO: estas señales no son buenas para mis datos, pillar otras (ver que señales pilla el F9)
     ##rov
     #
     sigs_str = [
@@ -144,7 +146,7 @@ def rtkModule(parameters: ParametrosRTK):
 
     # Load CLK file
     if clkfile is not None:
-        nav = rov_obs.decode_clk(clkfile, nav)
+        nav = rov.decode_clk(clkfile, nav)
     
     # Load code and phase biases from Bias-SINEX
     if bsxfile is not None:
@@ -296,6 +298,7 @@ def rtkModule(parameters: ParametrosRTK):
     nav.fout.write("\n")
 
     nav.fout.write("SETUP:\n") 
+    #TODO: guardar la configuracion "nav.@" que haya cambiado en la configuracion arriba (linea 100)
     nav.fout.write("Minimum elevation: {}\n".format(nav.elmin * 180/np.pi))
     nav.fout.write("Ambiguity: {}\n".format(nav.thresar))
     nav.fout.write("ARmode: {} (0:float-ppp,1:continuous,2:instantaneous,3:fix-and-hold)\n".format(nav.armode))
