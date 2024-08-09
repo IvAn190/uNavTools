@@ -17,6 +17,9 @@ import pymap3d as pm
 
 from typing import List
 
+# TODO: hacer una funcion que haga una nube de puntos, por ejemplo:
+# Pones el centro como la sposicion de referencia y pones acada epoch 
+# su solución, con y sin la mejora de PPP/RTK
 
 def plt_northEast(enu, smode):
     """
@@ -72,12 +75,12 @@ def plt_error(t, enu, dmax=0):
     plt.plot(t, enu[:, 2], label='up')    # Component 'up'
 
     # Plot conf
-    plt.ylabel('pos err[m]')
-    plt.xlabel('time[s]')
+    plt.ylabel('pos err[m]', fontsize=16)
+    plt.xlabel('time[s]', fontsize=16)
     plt.legend()
     plt.grid()
     plt.axis([0, max(t), -dmax, dmax])
-    plt.title("Componentes East, North, y Up en Función del Tiempo")
+    plt.title("Componentes East, North, y Up en Función del Tiempo", fontsize=16)
 
     #plt.show()
 
@@ -263,9 +266,9 @@ def horizontal_error_over_time(enu_list: List[np.ndarray], labels: List[str], fi
         ax.plot(enu_df.index, enu_df['horizontal_error'], label=label)
 
     # Set the axes and title
-    ax.set_title('Horizontal Error Over Time')
-    ax.set_xlabel('Time [s]')
-    ax.set_ylabel('Horizontal Error [m]')
+    ax.set_title('Horizontal Error Over Time', fontsize=16)
+    ax.set_xlabel('Time [s]', fontsize=14)
+    ax.set_ylabel('Horizontal Error [m]', fontsize=14)
     ax.legend()
     ax.grid()
 
@@ -278,8 +281,14 @@ def horizontal_error_over_time(enu_list: List[np.ndarray], labels: List[str], fi
 
     return fig
 
+import seaborn as sns
+from typing import List
+
 def histogram_horizontal_error(enu_list: List[np.ndarray], labels: List[str], bins: int = 30, filepath: str = None):
     fig, ax = plt.subplots(figsize=(12, 6))
+    
+    # Create a secondary axis for the density plot
+    ax2 = ax.twinx()
 
     for enu, label in zip(enu_list, labels):
         # Convert the ENU array to a DataFrame
@@ -290,12 +299,26 @@ def histogram_horizontal_error(enu_list: List[np.ndarray], labels: List[str], bi
         
         # Plot the histogram of the horizontal error
         ax.hist(horizontal_error, bins=bins, alpha=0.6, label=label)
+        
+        # Plot the density distribution
+        sns.kdeplot(horizontal_error, ax=ax2, label=label, alpha=0.6, color='red')
 
     # Set the axes and title
-    ax.set_title('Histogram of Horizontal Error')
-    ax.set_xlabel('Horizontal Error [m]')
-    ax.set_ylabel('Frequency')
-    ax.legend()
+    ax.set_title('Histogram of Horizontal Error with Density Distribution', fontsize=16)
+    ax.set_xlabel('Horizontal Error [m]', fontsize=14)
+    ax.set_ylabel('Frequency', fontsize=14)
+
+    # Adjust the density axis to have a maximum of 1
+    ax2.set_ylabel('Density', fontsize=14)
+    ax2.set_ylim(0, 1)  # Set the maximum limit for density to 1
+
+    # Combine legends
+    handles, labels = [], []
+    for axis in [ax, ax2]:
+        for handle, label in zip(*axis.get_legend_handles_labels()):
+            handles.append(handle)
+            labels.append(label)
+    ax.legend(handles, labels)
 
     # Save the plot if a filepath is provided
     if filepath:
@@ -339,9 +362,9 @@ def cdf_horizontal_error(enu_list: List[np.ndarray], labels: List[str], filepath
     ax.axhline(y=100, color='grey', linestyle='--', lw=0.8)
 
     # Set the axes and title
-    ax.set_title('CDF of Horizontal Error')
-    ax.set_xlabel('Horizontal Error [m]')
-    ax.set_ylabel('Cumulative Probability [%]')
+    ax.set_title('CDF of Horizontal Error', fontsize=16)
+    ax.set_xlabel('Horizontal Error [m]', fontsize=16)
+    ax.set_ylabel('Cumulative Probability [%]', fontsize=16)
     ax.set_yticks(np.arange(0, 101, 10))  # Setting y-ticks from 0 to 100 in steps of 10
     ax.legend()
 
