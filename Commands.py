@@ -55,6 +55,10 @@ def parse_arguments():
     parser.add_argument('-plot', '--plot', action='store_true', help='Plot all the data computed by the rtk or ppp module.')
     parser.add_argument('-kml', '--kml', action='store_true', help='Plot kml map.')
 
+    parser.add_argument('-nocheck', '--nocheck', action='store_false', help='No check if the model is a U-blox.')
+
+
+
     return parser.parse_args() 
 
 def get_name_file(folder):
@@ -238,7 +242,7 @@ def process_input(args):
     ret = -1
 
     if args.time and args.time > 0 and args.port and args.getdata:
-        name, args.model = rawData2ubx(args.time, PORT=args.port, UBX=True) 
+        name, args.model = rawData2ubx(args.time, PORT=args.port, UBX=args.nocheck) 
         runconvbin(name, args.model, True) 
         if not args.ppp and not args.rtk:
             ret = 0
