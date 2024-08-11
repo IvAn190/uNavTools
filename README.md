@@ -58,3 +58,25 @@ python setup.py
 This script will read the requirements.txt file and install each dependency using pip. Ensure requirements.txt is in the same directory as setup.py.
 
 All code is available on my GitHub repository, which is open source and designed for easy and straightforward use.
+
+## Sender
+
+In order to activate the sender.exe script, you just need to input two things:
+1. COM port, where do you want to send all the data.
+2. The path file you want to send.
+
+```bash
+.\sender.exe COM8 D:\Programacion\uNavTools\data.ubx
+```
+
+> [!WARNING] 
+> Before starting, we need to start com0com application and configure both ports, receiver and sender. Due to Windows permissions, we cannot use one port with multiple programs/applications. Because of that, we must configure two ports in the com0com application. 
+
+And the input to get the data from that virtual port:
+
+> [!NOTE]
+> Again, in this example I'll use COM8 to send the data and COM9 to get the data using uNavTools. 
+
+```bash
+python.exe .\Commands.py -getdata -t 1 -f 2 -port 'COM9' -nocheck
+```
