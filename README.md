@@ -1,5 +1,14 @@
 # uNavTools
 
+## Task List
+
+> [!NOTE]
+> - [ ] Create a virtual port with com0com. 
+> - [ ] Download corrections via NTRIP automatically.
+> - [ ] Create test and deploys (Docker) for the CI/CD
+> - [ ] Implement HASlib and OSNMAlib into the project.
+> - [ ] Refactor the plot functions.
+
 ## Overview
 
 uNavTools is a comprehensive toolset designed for the analysis and processing of GNSS signals using both Real-Time Kinematic (RTK) and Precise Point Positioning (PPP) techniques. This project consists of three main modules:
@@ -59,7 +68,7 @@ This script will read the requirements.txt file and install each dependency usin
 
 All code is available on my GitHub repository, which is open source and designed for easy and straightforward use.
 
-## Sender
+## Sender (will be refactor very soon...)
 
 In order to activate the sender.exe script, you just need to input two things:
 1. COM port, where do you want to send all the data.
