@@ -56,6 +56,7 @@ def parse_arguments():
     parser.add_argument('-kml', '--kml', action='store_true', help='Plot kml map.')
 
     parser.add_argument('-nocheck', '--nocheck', action='store_false', help='No check if the model is a U-blox.')
+    parser.add_argument('-simul', '--simul', action='store_true', help='Simulate the hardware with COM8 and COM9')
 
 
 
@@ -235,14 +236,23 @@ def construct_file_paths(folder, navfile, obsfile, orbfile, clkfile, bsxfile):
 
     return navfile_path, obsfile_path, orbfile_path, clkfile_path, bsxfile_path
 
-
+def get_current_script_path():
+    return os.path.dirname(os.path.abspath(__file__))
 def process_input(args): 
-
     name = ''
     ret = -1
 
-    if args.time and args.time > 0 and args.port and args.getdata:
-        name, args.model = rawData2ubx(args.time, PORT=args.port, UBX=args.nocheck) 
+    if args.time and args.time > 0 and args.getdata:
+        if args.simul:
+            subprocess.run(["python.exe", "src/com_simulator_manager.py"])
+            name, args.model = rawData2ubx(args.time, PORT="COM9", UBX=False)
+        else:
+            if args.port:
+                name, args.model = rawData2ubx(args.time, PORT=args.port, UBX=args.nocheck) 
+            else: 
+                print("Error, no port selected with -port 'COMx'")
+                ret = 1
+                return ret
         runconvbin(name, args.model, True) 
         if not args.ppp and not args.rtk:
             ret = 0
